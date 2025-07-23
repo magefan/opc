@@ -446,7 +446,7 @@ class UpdateLayoutProcessor implements LayoutProcessorInterface
                                                         ],
                                                         'region_id' => [
                                                             'sortOrder' => 50,
-                                                            'placeholder' => __(''),
+                                                            'placeholder' => '',
                                                             'config' => [
                                                                 'template' => 'IWD_Opc/form/field-region',
                                                                 'additionalClasses' => 'float-left wd30-66 mr4'
@@ -863,7 +863,7 @@ class UpdateLayoutProcessor implements LayoutProcessorInterface
         } else if ($fieldCode === 'region_id') {
             $fieldConfig['label'] = new \Magento\Framework\Phrase('');
             $fieldConfig['sortOrder'] = '50';
-            $fieldConfig['placeholder'] = __('');
+            $fieldConfig['placeholder'] = '';
             $fieldConfig['component'] = 'IWD_Opc/js/form/element/region';
             $fieldConfig['config']['template'] = 'IWD_Opc/form/field-region';
             $fieldConfig['config']['elementTmpl'] = 'IWD_Opc/form/element/select';
