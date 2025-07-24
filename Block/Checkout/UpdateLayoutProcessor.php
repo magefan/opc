@@ -437,7 +437,7 @@ class UpdateLayoutProcessor implements LayoutProcessorInterface
 
                                                         ],
                                                         'region' => [
-                                                            'label' => new \Magento\Framework\Phrase(''),
+                                                            'label' => '',
                                                             'sortOrder' => 50,
                                                             'config' => [
                                                                 'template' => 'IWD_Opc/form/field',
@@ -854,14 +854,14 @@ class UpdateLayoutProcessor implements LayoutProcessorInterface
             $fieldConfig['config']['additionalClasses'] = 'float-left wd30-66 mr4';
             $fieldConfig['validation']['required-entry'] = true;
         } else if ($fieldCode === 'region') {
-            $fieldConfig['label'] = new \Magento\Framework\Phrase('');
+            $fieldConfig['label'] = '';
             $fieldConfig['visible'] = false;
             $fieldConfig['sortOrder'] = '50';
             $fieldConfig['config']['template'] = 'IWD_Opc/form/field-region';
             $fieldConfig['config']['additionalClasses'] = 'float-left wd30-66 mr4';
             $fieldConfig['config']['elementTmpl'] = 'IWD_Opc/form/element/input';
         } else if ($fieldCode === 'region_id') {
-            $fieldConfig['label'] = new \Magento\Framework\Phrase('');
+            $fieldConfig['label'] = '';
             $fieldConfig['sortOrder'] = '50';
             $fieldConfig['placeholder'] = '';
             $fieldConfig['component'] = 'IWD_Opc/js/form/element/region';
